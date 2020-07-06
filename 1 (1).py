@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jul  5 21:19:34 2020
-
-@author: Пользователь
-"""
-
 import math
 from scipy.integrate import ode
 import matplotlib.pyplot as plt
