@@ -1,4 +1,4 @@
-import math #asdasdad
+import math 
 from scipy.integrate import ode
 import matplotlib.pyplot as plt
 
