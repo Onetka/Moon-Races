@@ -99,25 +99,7 @@ def ro(x, y):
     if i > 25:
       break
   return ro_lst[i]
-'''
-def atm_dens(x, y):
-    h1 = math.sqrt(x*x + y*y)
-    if 0 < h1 <= 11000:
-        D = 1.225 * (1 - h1 / 44331)**4.255876
-    elif 11000 < h1 <= 20000:
-        D = 1.225 * 0.297076 * 10**(-(h1-11000)/6375000)
-    elif 20000 < h1 <= 32000:
-        D = 1.225 * (0.978261 + h1 / 201020)**(-35.16320)
-    elif 32000 < h1 <= 47000:
-        D = 1.225 * (0.857003 + h1 / 57947)**(-13.20114)
-    elif 47000 < h1 <= 51000:
-        D = 1.225 * 0.00116533 * 10**(-(h1-47000)/7922)
-    elif 51000 < h1 <= 71000:
-        D = 1.225 * (0.798990 - h1 / 184809)**11.20114
-    elif h1 > 71000:
-        D = 0
-    return (D)
-'''
+
 def launch1(t, y):  # Запуск первой ступени
     global Vreact1, mRN1, mRN1F, M_total, RN1force, d1
     X, X1, Y, Y1 = y
@@ -227,7 +209,7 @@ h = math.sqrt(x**2 + y**2)
 nx, ny = math.cos(math.atan(-y/x)), math.sin(math.atan(-y/x))
 w = math.sqrt((ny * vx + nx * vy)**2) / h
 phi = math.atan(-y/x)
-f = open("BlastOffFromEarth.txt", 'w')
+f = open("Этап 1.txt", 'w')
 print(dm, w, h, t3, phi, file=f)
 f.close()
 
