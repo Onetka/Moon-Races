@@ -138,17 +138,7 @@ end.close()
 
 
 plt.style.use('seaborn-white')
-plt.title("Тормозим \n ", size=35)
-#добавление звездочек на график (мы же в космосе)
-x = np.zeros(39)
-y = np.zeros(39)
-for i in range(39):
-    if i<27:
-        x[i] = i*100
-        y[i] = random.randint(6375, 7000)
-    else:
-        x[i] = i*100 
-        y[i] = random.randint(5500, 7000)       
+plt.title("Тормозим \n ", size=35)       
     
 plt.plot(x, y, marker ="*", c="white", linestyle=" ")
 plt.plot(xgraph, ygraph, linewidth=2, color='b')
